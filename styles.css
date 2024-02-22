@@ -1,29 +1,50 @@
 *{ 
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    background-color: #59432f;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff7a00;
 }
 
 header{
-    background-color: #676767;
+    background-color: #383838;
+    width: 20vw;
     height: 100vh;
-    width: 25%;
-    position:absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    position: fixed;
+    text-align: center;
+    padding: 2%;
+}
+
+#menugrafik{
+    width: 85%;
 }
 
 nav{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    height: 20%;
+    justify-content: space-between;
+    margin-top: 20%;
+    height: 35vh;
 }
 
 nav a{
     color: #ffa800;
     text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 3.95vh;
+}
+
+nav a:hover{
+    color: #4d941f;
 }
 
 #currentpage{
@@ -34,27 +55,347 @@ nav a{
     color: #4d941f;
 }
 
-nav a:hover{
-    color: #4d941f;
-}
-
-header img{
-    width: 75%;
-}
-
 main{
-    background-color: #383838;
+    background-color: #59432f;
+    width: 80vw;
+    margin-left: 20vw;
     text-align: center;
 }
 
 .appelsinlogo{
-    width: 25%;
+    width: 27%;
+}
+
+h1{
+    color: #ffa800;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 6vh;
 }
 
 h2{
     color: #ffa800;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3.5vh;
 }
 
 p{
     color: white;
+    font-size: 2.5vh;
+    max-width: 50vw;
+}
+
+.trekolonner{
+    height: 70vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 1%;
+    width: 80vw;
+}
+
+.enkolonne{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.cirkelramme{ /*pixel skal ændres i media quies*/
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: #ff7a00;
+    border-width: 20px;
+    border-radius: 50%;
+    box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+#vfus{
+    background-color: #414141;
+}
+
+#nippon{
+    background-color: #d9d9d9;
+}
+
+#cocio{
+    background-image: url(images/lyslactosefricociodåse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.knap{
+    background-color: #ff7a00;
+    color: white;
+    font-family: 'inter', sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-style: italic;
+    padding: 4%;
+    box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.knap:hover{
+    background-color: #4d941f;
+}
+
+.centerP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.centerP .enkolonne .knap{
+    padding: 3%;
+}
+
+.centerP .plink{
+    color: #ff7a00;
+}
+
+.centerP .plink:hover{
+    color: #4d941f;
+}
+
+.centerP .cirkelramme{
+    margin: 1% 0;
+}
+.centerP .knap{
+    padding: 1%;
+}
+
+/*---------------------------styles til alle projekter----------------------*/
+/*---------------------------styles til alle projekter----------------------*/
+/*---------------------------styles til alle projekter----------------------*/
+
+
+#projektmenu{
+    display: flex;
+    justify-content: center;
+}
+
+#projektlinks{
+    flex-wrap: wrap;
+    width: 55vw;
+}
+
+#projektlinks a{
+    color: #ff7a00;
+    text-decoration: none;
+    font-size: 4vh;
+    font-weight: 900;
+    font-style: italic;
+    padding-left: 5%;
+}
+
+#projektlinks a:hover{
+    color: #4d941f;
+}
+
+.textleft{
+    text-align: left;
+    margin: 0 10%;
+}
+
+.projektlayout .knap{
+    padding: 1%;
+}
+
+.projektlayout{
+    margin-bottom: 7%;
+}
+
+.projektlayout p{
+    margin: 1% 0;
+}
+
+h3{
+    color: #ffa800;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.80vh;
+    padding: 1% 0 0.5% 0;
+}
+
+.videocontainer{
+    display: flex;
+}
+
+.computermockup{
+    width: 30vw;
+    background-color: #59432f;
+}
+
+.mobilmockup{
+    width: 15vw;
+    background-color: #59432f;
+}
+
+#moodboardvfus{
+    width: 30vw;
+}
+
+#styletilevfus{
+    width: 20vw;
+}
+
+#nipponlogo{
+    width: 22%;
+}
+
+.nipponhvidimg{
+    width: 50vw;
+}
+
+#nipponjs{
+    width: 35vw;
+}
+
+#cociomockups img{
+    height: 40vh;
+}
+
+.billedeogkilde{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    width: 55vw;
+    padding: 2% 0;
+}
+
+.billedeogkilde img{
+    height: 25vh;
+}
+
+.billedeogkilde p{
+    flex-wrap: wrap;
+    font-size: 1.75vh;
+    padding: 0 1%;
+    width: 20vw;
+}
+
+.billedeogkilde p a{
+    color: #ff7a00;
+}
+
+.billedeogkilde p a:hover{
+    color: #4d941f;
+}
+
+.portfoliobilleder img{
+    width: 24vw;
+}
+
+/*---------------------------Mediaquies--------------------*/
+/*---------------------------Mediaquies--------------------*/
+/*---------------------------Mediaquies--------------------*/
+
+@media screen and (max-width:1124px) {
+    header{
+        display: none;
+    }
+
+    main{
+        width: 100vw;
+        margin-left: 0;
+    }
+    
+    .trekolonner{
+        width: 100vw;
+    }
+
+    .computermockup{
+        width: 35vw;
+    }
+    
+    .mobilmockup{
+        width: 20vw;
+    }
+
+}
+
+@media screen and (max-width:975px) {
+    .appelsinlogo{
+        width: 30%;
+    }
+    
+    .trekolonner{
+        width: 100vw;
+        height: 100%;
+    }
+
+    .enkolonne{
+        height: 60vh;
+        width: 80vw;
+        padding-bottom: 5%;
+    }
+
+    .cirkelramme{ /*pixel skal ændres i media quies*/
+        height: 150px;
+        width: 150px;
+        border-width: 15px;
+    }
+
+    .centerP .enkolonne .knap{
+        padding: 5%;
+    }
+
+    h2{
+        font-weight: 900;
+        font-size: 2.75vh;
+    }
+    
+    p{
+        font-size: 2vh;
+        max-width: 50vw;
+    }
+
+    .centerP .knap{
+        padding: 2.5%;
+    }
+
+    .videocontainer{
+        flex-direction: column;
+    }
+
+    .computermockup{
+        width: 40vw;
+    }
+    
+    .mobilmockup{
+        width: 25vw;
+    }
+
+    #moodboardvfus{
+        width: 40vw;
+    }
+
+    #styletilevfus{
+        width: 25vw;
+    }
+
+    #nipponlogo{
+        width: 30%;
+    }
+
+    #cociomockups img{
+        height: 20vh;
+    }
+
+    .billedeogkilde{
+        width: 65vw;
+    }
+
+    .billedeogkilde p{
+        width: 40vw;
+    }
 }

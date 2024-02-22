@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forside</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
-        <img src="images/menubillede.svg" alt="potrætbillede med grafik">
+        <img id="menugrafik" src="images/menubillede.svg" alt="potrætbillede med grafik">
         <nav>
             <a id="currentpage" href="index.html">FORSIDE</a>
             <a href="projekter.html">ALLE PROJEKTER</a>
@@ -16,11 +20,105 @@
             <a href="kontakt.html">KONTAKT</a>
         </nav>
     </header>
+
     <main>
         <img class="appelsinlogo" src="images/logo1.png" alt="Logo">
-        <h2>Velkommen til mit portfolio!</h2>
-        <p>Jeg læser til multimediedesign på Aarhus Erhvervsakademi. <br>
-            Lige nu er jeg på tredje semester og søger praktikplads i efteråret 2024.</p>
+        <div class="centerP">
+            <h2>Velkommen til mit portfolio!</h2>
+            <p>Jeg læser til multimediedesign på Aarhus Erhvervsakademi. <br>
+                Lige nu er jeg på tredje semester og søger praktikplads i efteråret 2024.</p>
+        </div>
+        <br>
+        <br>
+        <div class="centerP">
+            <h2>Fremhævede projekter</h2>
+            <div class="trekolonner">
+                <div class="enkolonne">
+                    <div id="vfus" class="cirkelramme">
+                        <img src="images/logovfus.svg" alt="Logo til Vejle Fjords ukendte steder projekt">
+                    </div>
+                        <h2>V.F.U.S.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem iure, 
+                            repellendus veniam expedita sunt modi illum, exercitationem error nobis, 
+                            labore nisi? Saepe beatae vitae eum minima aperiam perspiciatis modi quas.</p>
+                        <a class="knap" href="">LÆS MERE</a>
+                </div>
+
+                <div class="enkolonne">
+                    <div id="nippon" class="cirkelramme">
+                        <img src="images/logonippon.svg" alt="Logo til Nippon projekt">
+                    </div>
+                    <h2>Nippon</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem iure, 
+                        repellendus veniam expedita sunt modi illum, exercitationem error nobis, 
+                        labore nisi? Saepe beatae vitae eum minima aperiam perspiciatis modi quas.</p>
+                    <a class="knap" href="">LÆS MERE</a>
+                </div>
+
+                <div class="enkolonne">
+                    <div id="cocio" class="cirkelramme">
+                    </div>
+                    <h2>Cocio</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem iure, 
+                        repellendus veniam expedita sunt modi illum, exercitationem error nobis, 
+                        labore nisi? Saepe beatae vitae eum minima aperiam perspiciatis modi quas.</p>
+                    <a class="knap" href="">LÆS MERE</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="centerP">
+            <h2>Ønsker til praktikforløbet</h2>
+            <p>I praktikken kunne jeg godt tænke mig at blive kastet ud i lidt af hvert. 
+
+                Jeg synes hele processen fra idé til færdig produkt er spændende. Derfor søger jeg et praktiksted, hvor jeg har mulighed for at arbejde med forskellige faser i processen og gerne på det samme projekt.
+                <br>
+                <br>
+                Da jeg endnu ikke har fundet et område at specialisere mig inden for, søger jeg som udgangspunkt en praktikplads i et bureau, for at få den variation, som de forskellige kunder kan give.
+                <br>
+                <br>
+                For mig er det også vigtigt at have gode kollegaer, man kan spare med og skabe en tryg arbejdsrelation. En bonus er at bevare den gode relation i pauserne.
+                <br>
+                Derudover ønsker jeg en praktikplads, hvor der også er mulighed for ansættelse efterfølgende.</p>
+        </div>
+        <br>
+        <br>
+        <div class="centerP">
+            <h2>Praktikkens praksis</h2>
+            <p>Jeg skal være i praktik i 10 uger, som der også bliver skrevet en kontrakt på, men der kan godt aftales en længere periode. 
+                Jeg skal skrive en hovedopgave efter praktikken og skal derfor også have tid til at skrive den, hvis praktikken bliver forlænget. 
+                <br>
+                <br>
+                I sammenhæng med praktikken kommer jeg til at sætte nogle læringsmål, der skal referere til de arbejdsopgaver jeg får i praktikken. Dem håber jeg selvfølgelig I vil hjælpe med at opnå. 
+                <br>
+                I kan læse mere om kravene til min praktik her:
+            <br> <a class="plink" href="https://www.eaaa.dk/samarbejde/fa-en-praktikant/multimediedesign/">https://www.eaaa.dk/samarbejde/fa-en-praktikant/multimediedesign/</a>
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="centerP">
+            <h2>Personlighed på arbejdet</h2>
+            <div class="cirkelramme">
+                <img src="images/arbejdsbillede.JPG" alt="CV billede af Nikoline">
+            </div>
+            <p>Imødekommende <br>Samarbejdende <br>Optimistisk <br>Nysgerrig <br>Lærenem <br>Effektikv
+            </p>
+        </div>
+        <br>
+        <br>
+        <div class="centerP">
+            <h2>Fritid</h2>
+            <p>I min fritid kan jeg godt lide at være fysisk aktiv og fordybe mig i mine egne kreative projekter. 
+                I kan blive klogere på mig som person her:
+            </p>
+            <br>
+            <a class="knap" href="omnikoline.html">OM NIKOLINE</a>
+        </div>
+        <br>
+        <br>
     </main>
 </body>
 </html>
