@@ -16,11 +16,28 @@
 
 header{
     background-color: #383838;
-    width: 20vw;
+    width: 22vw;
     height: 100vh;
     position: fixed;
     text-align: center;
     padding: 2%;
+}
+
+#burgermenu{
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    margin-left: 3vw;
+}
+
+.streg{
+    display: block;
+    width: 10vw;
+    height: 0.8vh;
+    margin: 0.8vh auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #ff7a00;
 }
 
 #menugrafik{
@@ -43,23 +60,27 @@ nav a{
     font-size: 3.95vh;
 }
 
+
 nav a:hover{
     color: #4d941f;
 }
 
-#currentpage{
+nav #currentpage{
     color: #ff7a00;
 }
 
-#currentpage:hover{
+nav #currentpage:hover{
     color: #4d941f;
 }
+
 
 main{
     background-color: #59432f;
     width: 80vw;
+    min-height: 100vh;
     margin-left: 20vw;
     text-align: center;
+    padding: 3% 0 2% 0;
 }
 
 .appelsinlogo{
@@ -86,8 +107,16 @@ p{
     max-width: 50vw;
 }
 
+a{
+    color: #ff7a00;
+}
+
+a:hover{
+    color: #4d941f;
+}
+
 .trekolonner{
-    height: 70vh;
+    height: 100%;
     flex-wrap: wrap;
     display: flex;
     align-content: center;
@@ -104,6 +133,10 @@ p{
     align-items: center;
     justify-content: space-between;
     padding: 1% 0;
+}
+
+.enkolonne h2{
+    margin-top: 6%;
 }
 
 .cirkelramme{ /*pixel skal ændres i media quies*/
@@ -132,6 +165,10 @@ p{
     align-content: center;
 }
 
+.enkolonne p{
+    margin: 5% 0;
+}
+
 .knap{
     background-color: #ff7a00;
     color: white;
@@ -145,25 +182,18 @@ p{
 
 .knap:hover{
     background-color: #4d941f;
+    color: white;
 }
 
 .centerP{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2%;
+    padding: 2%;
 }
 
 .centerP .enkolonne .knap{
     padding: 3%;
-}
-
-.centerP .plink{
-    color: #ff7a00;
-}
-
-.centerP .plink:hover{
-    color: #4d941f;
 }
 
 .centerP .cirkelramme{
@@ -171,6 +201,7 @@ p{
 }
 .centerP .knap{
     padding: 1%;
+    margin: 1% 0 2% 0;
 }
 
 /*---------------------------styles til alle projekter----------------------*/
@@ -185,20 +216,16 @@ p{
 
 #projektlinks{
     flex-wrap: wrap;
-    width: 55vw;
+    width: 60vw;
+    margin-bottom: 5%;
 }
 
 #projektlinks a{
-    color: #ff7a00;
     text-decoration: none;
     font-size: 4vh;
     font-weight: 900;
     font-style: italic;
     padding-left: 5%;
-}
-
-#projektlinks a:hover{
-    color: #4d941f;
 }
 
 .textleft{
@@ -208,14 +235,15 @@ p{
 
 .projektlayout .knap{
     padding: 1%;
+    
 }
 
 .projektlayout{
-    margin-bottom: 7%;
+    padding-bottom: 7%;
 }
 
 .projektlayout p{
-    margin: 1% 0;
+    margin: 0.5% 0 2% 0;
 }
 
 h3{
@@ -264,35 +292,106 @@ h3{
     height: 40vh;
 }
 
+#tobilledermedp{
+    display: flex;
+}
+
+.billedeogp {
+    width: 20vw;
+}
+
+.billedeogp img{
+    height: 30vh;
+}
+
+.billedeogp p{
+    font-size: 1.75vh;
+}
+
 .billedeogkilde{
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    width: 55vw;
-    padding: 2% 0;
 }
 
 .billedeogkilde img{
-    height: 25vh;
+    width: 25vw;
 }
 
 .billedeogkilde p{
     flex-wrap: wrap;
     font-size: 1.75vh;
     padding: 0 1%;
+}
+
+
+.portfoliofigmabilleder img{
     width: 20vw;
 }
 
-.billedeogkilde p a{
-    color: #ff7a00;
+#portfolioskitsebilleder img{
+    height: 30vh;
 }
 
-.billedeogkilde p a:hover{
-    color: #4d941f;
+.instakolonner{
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    /*align-content: center;*/
+    /*justify-content: space-between;*/
+    margin-top: 1%;
+    width: 80vw;
 }
 
-.portfoliobilleder img{
-    width: 24vw;
+.instakolonner .enkolonne{
+    width: 18vw;
+}
+
+.instakolonner .enkolonne img{
+    width: 16vw;
+}
+
+
+/*--------------------------styles til om nikoline--------------------*/
+/*--------------------------styles til om nikoline--------------------*/
+/*--------------------------styles til om nikoline--------------------*/
+
+#faldskærm{
+    margin-top: 2%;
+}
+
+.brødtekstogbilledekolonne{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+}
+
+.brødtekst{
+    text-align: left;
+    /*margin: 0 0 0 10%;*/
+    width: 55%;
+}
+
+.brødtekst ul{
+    margin: 1% 5%;
+}
+
+.brødtekst li{
+    color: white;
+    margin: 0.25% 0;
+    list-style-type: circle;
+}
+
+.billedekolonne{
+    width: 25%;
+}
+
+.billedekolonne img{
+    width: 60%;
+    margin: 4% 0;
+}
+
+#telefonikon, #mailikon, #linkedinikon{
+    height: 25vh;
 }
 
 /*---------------------------Mediaquies--------------------*/
@@ -302,6 +401,32 @@ h3{
 @media screen and (max-width:1124px) {
     header{
         display: none;
+    }
+
+    #burgermenu{
+        display: block;
+    }
+
+    #burgermenu.active{
+        margin-left: 26vw;
+    }
+
+    #burgermenu.active .streg:nth-child(2){
+        opacity: 0;
+    }
+
+    #burgermenu.active .streg:nth-child(1){
+        transform: translateY(1.6vh) rotate(45deg);
+    }
+
+    #burgermenu.active .streg:nth-child(3){
+        transform: translateY(-1.6vh) rotate(-45deg);
+    }
+
+    header.active{
+        display: block;
+        width: 30vw;
+        height: 100dvh;
     }
 
     main{
@@ -321,22 +446,54 @@ h3{
         width: 20vw;
     }
 
+    .billedekolonne img{
+        width: 60%;
+        margin: 4%;
+    }
+
 }
 
-@media screen and (max-width:975px) {
+/*---------------------------Mediaquies--------------------*/
+/*---------------------------Mediaquies--------------------*/
+/*---------------------------Mediaquies--------------------*/
+
+@media screen and (max-width:500px) {
+    header.active{
+        display: block;
+        width: 85vw;
+    }
+
+    #burgermenu{
+        margin-left: 3vw;
+        margin-top: 2vw;
+    }
+
+    #burgermenu.active{
+        margin-left: 65vw;
+    }
+
+    h1{
+        font-size: 5vh;
+        margin: 5% 10% 0 10%;
+    }
+
     .appelsinlogo{
-        width: 30%;
+        width: 60%;
     }
     
     .trekolonner{
         width: 100vw;
         height: 100%;
+        flex-wrap: wrap;
     }
 
     .enkolonne{
-        height: 60vh;
         width: 80vw;
         padding-bottom: 5%;
+    }
+
+    .enkolonne p{
+        margin: 3% 0;
     }
 
     .cirkelramme{ /*pixel skal ændres i media quies*/
@@ -349,18 +506,37 @@ h3{
         padding: 5%;
     }
 
+    .knap{
+        margin: 3%;
+    }
+
     h2{
         font-weight: 900;
-        font-size: 2.75vh;
+        font-size: 3.5vh;
+
     }
     
     p{
         font-size: 2vh;
-        max-width: 50vw;
+        max-width: 85%;
+        margin: 2% 0 5% 0;
     }
 
     .centerP .knap{
         padding: 2.5%;
+    }
+    
+    #projektmenu{
+    margin-bottom: 8%;
+    }
+
+    #projektlinks{
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        height: 45vh;
+        width: 85%;
+        justify-content: space-between;
     }
 
     .videocontainer{
@@ -368,34 +544,89 @@ h3{
     }
 
     .computermockup{
-        width: 40vw;
+        width: 100%;
+    }
+
+    .projektlayout{
+        height: auto;
+    }
+
+    .projektlayout p{
+        margin: 2% 0 5% 0;
+    }
+
+    .projektlayout .knap{
+        padding: 4%;
     }
     
     .mobilmockup{
-        width: 25vw;
+        width: 100%;
     }
 
     #moodboardvfus{
-        width: 40vw;
+        width: 100%;
     }
 
     #styletilevfus{
-        width: 25vw;
+        width: 100%;
     }
 
     #nipponlogo{
-        width: 30%;
+        width: 90%;
+    }
+
+    .nipponhvidimg{
+        width: 100%;
+    }
+    
+    #nipponjs{
+        width: 100%;
     }
 
     #cociomockups img{
-        height: 20vh;
+        height: 25vh;
     }
 
-    .billedeogkilde{
-        width: 65vw;
+    .billedeogp {
+        width: 100%;
     }
 
-    .billedeogkilde p{
-        width: 40vw;
+    .billedeogkilde img{
+        width: 80%;
+    }
+
+    .portfoliofigmabilleder img{
+        width: 100%;
+    }
+
+    #portfolioskitsebilleder img{
+        height: 35vh;
+    }
+
+    .instakolonner .enkolonne{
+        width: 80vw;
+    }
+    
+    .instakolonner .enkolonne img{
+        width: 60vw;
+    }
+
+    .brødtekstogbilledekolonne{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .brødtekst{
+        width: 100%;
+        margin: 0 0 0 10%;
+    }
+
+    .billedekolonne{
+        display: none;
+    }
+
+    #telefonikon, #mailikon, #linkedinikon{
+        height: 15vh;
     }
 }
