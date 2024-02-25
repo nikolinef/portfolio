@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff7a00;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="5" y="12.51" width="90" height="74.91" rx="5" ry="5"/>
+  <path class="cls-1" d="M6.87,14.34s32.24,41.91,43.13,41.91c12.6,0,43.87-41.91,43.87-41.91"/>
+  <path class="cls-1" d="M93.87,87.09s-18.4-23.92-32.1-35.62"/>
+  <path class="cls-1" d="M41.27,49.58C26.82,60.34,6.87,87.09,6.87,87.09"/>
+</svg>

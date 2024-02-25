@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="telefon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d941f;
+        stroke: #4d941f;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        font-size: 7px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #ffa800;
+        font-family: Calibri-BoldItalic, Calibri;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke: #ff7a00;
+      }
+
+      .cls-3 {
+        stroke-width: .5px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        fill: #ff7a00;
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        font-size: 8px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-7" d="M74.14,11.86v76.28c0,2.76-2.24,5-5,5H30.86c-2.76,0-5-2.24-5-5V11.86c0-2.76,2.24-5,5-5h38.28c2.76,0,5,2.24,5,5ZM71.12,87.27V12.34c0-1.68-1.36-3.04-3.04-3.04h-9.59c0,1.62-1.33,2.93-2.96,2.93h-10.32c-.81,0-1.56-.33-2.1-.85-.55-.53-.89-1.26-.92-2.08h-10.27c-1.68,0-3.04,1.36-3.04,3.04v74.93c0,1.68,1.36,3.04,3.04,3.04h36.16c1.68,0,3.04-1.36,3.04-3.04Z"/>
+    <g>
+      <rect class="cls-2" x="25.86" y="6.86" width="48.28" height="86.28" rx="5" ry="5"/>
+      <path class="cls-3" d="M68.08,90.31H31.92c-1.68,0-3.04-1.36-3.04-3.04V12.34c0-1.68,1.36-3.04,3.04-3.04h10.27c.03.82.37,1.55.92,2.08.54.52,1.29.85,2.1.85h10.32c1.63,0,2.95-1.31,2.96-2.93h9.59c1.68,0,3.04,1.36,3.04,3.04v74.93c0,1.68-1.36,3.04-3.04,3.04Z"/>
+    </g>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <circle class="cls-2" cx="37.77" cy="37.94" r="4.02"/>
+    <text class="cls-4" transform="translate(35.85 40)"><tspan x="0" y="0">1</tspan></text>
+    <circle class="cls-2" cx="50" cy="37.94" r="4.02"/>
+    <text class="cls-4" transform="translate(48.09 40)"><tspan x="0" y="0">2</tspan></text>
+    <circle class="cls-2" cx="61.87" cy="37.94" r="4.02"/>
+    <text class="cls-4" transform="translate(59.95 40)"><tspan x="0" y="0">3</tspan></text>
+    <circle class="cls-2" cx="37.77" cy="48.72" r="4.02"/>
+    <text class="cls-4" transform="translate(35.85 50.78)"><tspan x="0" y="0">4</tspan></text>
+    <circle class="cls-2" cx="50" cy="48.72" r="4.02"/>
+    <text class="cls-4" transform="translate(48.09 50.78)"><tspan x="0" y="0">5</tspan></text>
+    <circle class="cls-2" cx="61.87" cy="48.72" r="4.02"/>
+    <text class="cls-4" transform="translate(59.95 50.78)"><tspan x="0" y="0">6</tspan></text>
+    <circle class="cls-2" cx="37.77" cy="59.49" r="4.02"/>
+    <text class="cls-4" transform="translate(35.85 61.56)"><tspan x="0" y="0">7</tspan></text>
+    <circle class="cls-2" cx="50" cy="59.49" r="4.02"/>
+    <text class="cls-4" transform="translate(48.09 61.56)"><tspan x="0" y="0">8</tspan></text>
+    <circle class="cls-2" cx="61.87" cy="59.49" r="4.02"/>
+    <text class="cls-4" transform="translate(59.95 61.56)"><tspan x="0" y="0">9</tspan></text>
+    <circle class="cls-2" cx="50" cy="70.27" r="4.02"/>
+    <text class="cls-4" transform="translate(48.09 72.34)"><tspan x="0" y="0">0</tspan></text>
+    <circle class="cls-1" cx="50" cy="81.05" r="4.02"/>
+  </g>
+  <g id="Layer_4" data-name="Layer 4">
+    <text class="cls-5" transform="translate(33.56 27.41)"><tspan x="0" y="0">NI</tspan><tspan class="cls-6" x="7.38" y="0">K</tspan><tspan x="11.41" y="0">OLINE</tspan></text>
+  </g>
+</svg>
