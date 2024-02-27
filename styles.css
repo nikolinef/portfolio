@@ -4,22 +4,22 @@
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 ::-webkit-scrollbar{
-    background-color: #59432f;
+    background-color: #59432f; /*scroll felt er usynligt*/
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #ff7a00;
+    background-color: #ff7a00; /*scrollbar farves og passer til designet*/
 }
 
 header{
     background-color: #383838;
     width: 22vw;
     height: 100vh;
-    position: fixed;
+    position: fixed; /*så den ikke scroller med*/
     text-align: center;
     padding: 2%;
 }
@@ -27,8 +27,8 @@ header{
 #burgermenu{
     cursor: pointer;
     display: none;
-    position: fixed;
-    margin-left: 3vw;
+    position: fixed; /*så man hele tiden kan klikke på den uanset hvor lang nede på siden man er*/
+    margin-left: 3vw; /*Når headeren er lukket sidder menuen i hjørnet*/
 }
 
 .streg{
@@ -36,8 +36,8 @@ header{
     width: 10vw;
     height: 0.8vh;
     margin: 0.8vh auto;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #ff7a00;
 }
 
@@ -57,7 +57,6 @@ nav a{
     color: #ffa800;
     text-decoration: none;
     font-weight: 900;
-    /*font-style: italic;*/
     font-size: 3.95vh;
 }
 
@@ -79,7 +78,7 @@ main{
     background-color: #59432f;
     width: 80vw;
     min-height: 100vh;
-    margin-left: 20vw;
+    margin-left: 20vw; /*Så main content vises ved siden af headeren*/
     text-align: center;
     padding: 3% 0 2% 0;
 }
@@ -90,14 +89,12 @@ main{
 
 h1{
     color: #ffa800;
-    /*font-style: italic;*/
     font-weight: 900;
     font-size: 6vh;
 }
 
 h2{
     color: #ffa800;
-    /*font-style: italic;*/
     font-weight: 900;
     font-size: 3.5vh;
 }
@@ -118,7 +115,7 @@ a:hover{
 
 .trekolonner{
     height: 100%;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*så de kommer under hinanden i mobil device. */
     display: flex;
     align-content: center;
     justify-content: space-evenly;
@@ -141,7 +138,7 @@ a:hover{
 }
 
 .cirkelramme{ /*pixel skal ændres i media quies*/
-    height: 200px;
+    height: 200px; /*px ellers bliver cirklerne ikke "kvadratiske"*/
     width: 200px;
     border-style: solid;
     border-color: #ff7a00;
@@ -162,8 +159,8 @@ a:hover{
 #cocio{
     background-image: url(images/lyslactosefricociodåse.jpg);
     background-size: cover;
+    background-position: -2.5vw 0; /*dåsen er i midten*/
     background-repeat: no-repeat;
-    align-content: center;
 }
 
 .enkolonne p{
@@ -176,7 +173,6 @@ a:hover{
     font-family: 'inter', sans-serif;
     font-weight: 900;
     text-decoration: none;
-    /*font-style: italic;*/
     padding: 4%;
     box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
 }
@@ -216,8 +212,8 @@ a:hover{
 }
 
 #projektlinks{
-    flex-wrap: wrap;
-    width: 60vw;
+    flex-wrap: wrap; /*så de ryger under hinanden på mobil*/
+    width: 55vw;
     margin-bottom: 5%;
 }
 
@@ -225,7 +221,6 @@ a:hover{
     text-decoration: none;
     font-size: 4vh;
     font-weight: 900;
-    /*font-style: italic;*/
     padding-left: 5%;
 }
 
@@ -244,12 +239,11 @@ a:hover{
 }
 
 .projektlayout p{
-    margin: 0.5% 0 2% 0;
+    margin: 2% 0 2% 0;
 }
 
 h3{
     color: #ffa800;
-    /*font-style: italic;*/
     font-weight: 900;
     font-size: 2.80vh;
     padding: 1% 0 0.5% 0;
@@ -269,33 +263,34 @@ h3{
     background-color: #59432f;
 }
 
-#moodboardvfus{
-    width: 30vw;
-}
+/*responsive billedestørrelser*/
+    #moodboardvfus{
+        width: 30vw;
+    }
 
-#styletilevfus{
-    width: 20vw;
-}
+    #styletilevfus{
+        width: 20vw;
+    }
 
-#nipponlogo{
-    width: 22%;
-}
+    #nipponlogo{
+        width: 22%;
+    }
 
-.nipponhvidimg{
-    width: 50vw;
-}
+    .nipponhvidimg{
+        width: 50vw;
+    }
 
-#nipponjs{
-    width: 35vw;
-}
+    #nipponjs{
+        width: 35vw;
+    }
 
-#cociomockups img{
-    height: 40vh;
-}
+    #cociomockups img{
+        height: 40vh;
+    }
 
-#tobilledermedp{
-    display: flex;
-}
+    #tobilledermedp{
+        display: flex;
+    }
 
 .billedeogp {
     width: 20vw;
@@ -337,8 +332,6 @@ h3{
     height: 100%;
     flex-wrap: wrap;
     display: flex;
-    /*align-content: center;*/
-    /*justify-content: space-between;*/
     margin-top: 1%;
     width: 80vw;
 }
@@ -368,7 +361,6 @@ h3{
 
 .brødtekst{
     text-align: left;
-    /*margin: 0 0 0 10%;*/
     width: 55%;
 }
 
@@ -380,6 +372,7 @@ h3{
     color: white;
     margin: 0.25% 0;
     list-style-type: circle;
+    list-style-position: inside;
 }
 
 .billedekolonne{
@@ -390,6 +383,9 @@ h3{
     width: 60%;
     margin: 4% 0;
 }
+/*---------------------------styles til kontakt----------------------*/
+/*---------------------------styles til kontakt----------------------*/
+/*---------------------------styles til kontakt----------------------*/
 
 #telefonikon, #mailikon, #linkedinikon{
     height: 25vh;
@@ -408,7 +404,7 @@ h3{
         display: block;
     }
 
-    #burgermenu.active{
+    #burgermenu.active{ /*class bliver tilføjet af js*/
         margin-left: 26vw;
     }
 
@@ -416,6 +412,8 @@ h3{
         opacity: 0;
     }
 
+    /*burgermenu transistion
+    stregerne vender sig og bliver til kryds*/
     #burgermenu.active .streg:nth-child(1){
         transform: translateY(1.6vh) rotate(45deg);
     }
@@ -424,7 +422,7 @@ h3{
         transform: translateY(-1.6vh) rotate(-45deg);
     }
 
-    header.active{
+    header.active{ /*class bliver tilføjet af js*/
         display: block;
         width: 30vw;
         height: 100dvh;
@@ -451,7 +449,6 @@ h3{
         width: 60%;
         margin: 4%;
     }
-
 }
 
 /*---------------------------Mediaquies--------------------*/
@@ -459,20 +456,21 @@ h3{
 /*---------------------------Mediaquies--------------------*/
 
 @media screen and (max-width:500px) {
+    /*-------Burger menu------*/
     header.active{
         display: block;
         width: 85vw;
     }
 
-    #burgermenu{
+    #burgermenu{ /*når menuen er lukket*/
         margin-left: 3vw;
         margin-top: 2vw;
     }
 
-    #burgermenu.active{
+    #burgermenu.active{ /*når menuen er åben*/
         margin-left: 65vw;
     }
-
+/*----------maincontent------*/
     h1{
         font-size: 5vh;
         margin: 5% 10% 0 10%;
@@ -526,6 +524,8 @@ h3{
     .centerP .knap{
         padding: 2.5%;
     }
+
+    /*----Styles til projekt side*/
     
     #projektmenu{
     margin-bottom: 8%;
@@ -563,55 +563,56 @@ h3{
     .mobilmockup{
         width: 100%;
     }
+    /*størrelser på billederne, fylder mere på mobil*/
+        #moodboardvfus{
+            width: 100%;
+        }
 
-    #moodboardvfus{
-        width: 100%;
-    }
+        #styletilevfus{
+            width: 100%;
+        }
 
-    #styletilevfus{
-        width: 100%;
-    }
+        #nipponlogo{
+            width: 90%;
+        }
 
-    #nipponlogo{
-        width: 90%;
-    }
+        .nipponhvidimg{
+            width: 100%;
+        }
+        
+        #nipponjs{
+            width: 100%;
+        }
 
-    .nipponhvidimg{
-        width: 100%;
-    }
-    
-    #nipponjs{
-        width: 100%;
-    }
+        #cociomockups img{
+            height: 25vh;
+        }
 
-    #cociomockups img{
-        height: 25vh;
-    }
+        .billedeogp {
+            width: 100%;
+        }
 
-    .billedeogp {
-        width: 100%;
-    }
+        .billedeogkilde img{
+            width: 80%;
+        }
 
-    .billedeogkilde img{
-        width: 80%;
-    }
+        .portfoliofigmabilleder img{
+            width: 100%;
+        }
 
-    .portfoliofigmabilleder img{
-        width: 100%;
-    }
+        #portfolioskitsebilleder img{
+            height: 35vh;
+        }
 
-    #portfolioskitsebilleder img{
-        height: 35vh;
-    }
-
+    /*-----genbrug med lidt nyt------*/
     .instakolonner .enkolonne{
         width: 80vw;
     }
     
     .instakolonner .enkolonne img{
         width: 60vw;
-    }
-
+    } 
+    /*-----styles til om siden------*/
     .brødtekstogbilledekolonne{
         display: flex;
         width: 100%;
@@ -626,7 +627,7 @@ h3{
     .billedekolonne{
         display: none;
     }
-
+    /*-------styles til kontakt-------*/
     #telefonikon, #mailikon, #linkedinikon{
         height: 15vh;
     }
