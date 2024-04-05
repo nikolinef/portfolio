@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'inter', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth; 
 }
 
 ::-webkit-scrollbar{
-    background-color: #59432f; /*scroll felt er usynligt*/
+    background-color: #3E2713; /*scroll felt er usynligt*/
 }
 
 ::-webkit-scrollbar-thumb{
@@ -17,21 +17,22 @@
 
 header{
     background-color: #383838;
-    width: 22vw;
+    width: 20vw;
     height: 100vh;
     position: fixed; /*så den ikke scroller med*/
     text-align: center;
     padding: 2%;
+    z-index: 2;
 }
 
 #burgermenu{
     cursor: pointer;
     display: none;
     position: fixed; /*så man hele tiden kan klikke på den uanset hvor lang nede på siden man er*/
-    margin-left: 3vw; /*Når headeren er lukket sidder menuen i hjørnet*/
+    /*margin-left: 3vw; Når headeren er lukket sidder menuen i hjørnet*/
 }
 
-.streg{
+.streg{ /*streger i burgermenu*/
     display: block;
     width: 10vw;
     height: 0.8vh;
@@ -43,6 +44,11 @@ header{
 
 #menugrafik{
     width: 85%;
+    /*
+    border-style: solid;
+    border-color: #ffa800;
+    border-width: 1.25vw;*/
+    box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
 nav{
@@ -73,27 +79,45 @@ nav #currentpage:hover{
     color: #4d941f;
 }
 
+/*----------generelle styles til maincontent---------*/
+/*----------generelle styles til maincontent---------*/
+/*----------generelle styles til maincontent---------*/
 
 main{
-    background-color: #59432f;
+    background-color: #3E2713;
     width: 80vw;
     min-height: 100vh;
     margin-left: 20vw; /*Så main content vises ved siden af headeren*/
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 3% 0 2% 0;
+    align-items: center;
+    
 }
 
 .appelsinlogo{
     width: 27%;
 }
 
-h1{
+.contentblok{
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1{
     color: #ffa800;
-    font-weight: 900;
     font-size: 6vh;
 }
 
 h2{
+    color: #ffa800;
+    font-weight: 900;
+    font-size: 4vh;
+}
+
+h3{
     color: #ffa800;
     font-weight: 900;
     font-size: 3.5vh;
@@ -103,6 +127,7 @@ p{
     color: white;
     font-size: 2.5vh;
     max-width: 50vw;
+    margin: 0.5% 0 1.5% 0;
 }
 
 a{
@@ -119,22 +144,27 @@ a:hover{
     display: flex;
     align-content: center;
     justify-content: space-evenly;
-    margin-top: 1%;
     width: 80vw;
 }
 
 .enkolonne{
-    height: 100%;
+    height: 55vh;
     width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1% 0;
 }
 
-.enkolonne h2{
-    margin-top: 6%;
+.lavkolonne{
+    display: flex;
+    flex-direction: column;
+    padding: 1.8vh 0;
+}
+
+.lavkolonne img{
+    height: 45dvh;
 }
 
 .cirkelramme{ /*pixel skal ændres i media quies*/
@@ -142,7 +172,7 @@ a:hover{
     width: 200px;
     border-style: solid;
     border-color: #ff7a00;
-    border-width: 20px;
+    border-width: 17px;
     border-radius: 50%;
     box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -163,9 +193,6 @@ a:hover{
     background-repeat: no-repeat;
 }
 
-.enkolonne p{
-    margin: 5% 0;
-}
 
 .knap{
     background-color: #ff7a00;
@@ -173,7 +200,7 @@ a:hover{
     font-family: 'inter', sans-serif;
     font-weight: 900;
     text-decoration: none;
-    padding: 4%;
+    padding: 1.5vh; /*ændres i mdeia q*/
     box-shadow: 7px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -183,166 +210,96 @@ a:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
-.centerP{
+/*---------------------------styles til alle projekter----------------------*/
+/*---------------------------styles til alle projekter----------------------*/
+/*---------------------------styles til alle projekter----------------------*/
+
+.carouselcontainer{
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2%;
+    height: 100dvh;
 }
 
-.centerP .enkolonne .knap{
-    padding: 3%;
-}
-
-.centerP .cirkelramme{
-    margin: 1% 0;
-}
-.centerP .knap{
-    padding: 1%;
-    margin: 1% 0 2% 0;
-}
-
-/*---------------------------styles til alle projekter----------------------*/
-/*---------------------------styles til alle projekter----------------------*/
-/*---------------------------styles til alle projekter----------------------*/
-
-
-#projektmenu{
+.carouselcard{
+    display: none;
+    width: 60vw;
+    height: 80vh;
+    margin: 3% 0;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #383838;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-#projektlinks{
-    flex-wrap: wrap; /*så de ryger under hinanden på mobil*/
-    width: 55vw;
-    margin-bottom: 5%;
+.prev, .next{
+    cursor: pointer;
+    font-size: 15vh;
+    position: absolute;
+    transform: translateY(175%); /*placering af plie*/
+    user-select: none;
 }
 
-#projektlinks a{
-    text-decoration: none;
-    font-size: 4vh;
-    font-weight: 900;
-    padding-left: 5%;
+.prev img, .next img{
+    height: 10dvh;
 }
 
-.textleft{
-    text-align: left;
-    margin: 0 10%;
-}
-
-.projektlayout .knap{
-    padding: 1%;
+.prev{
+    left: 3vw;
     
 }
 
-.projektlayout{
-    padding-bottom: 7%;
+.next{
+    right: 3vw;
 }
 
-.projektlayout p{
-    margin: 1% 0 2% 0;
+.dot{
+    cursor: pointer;
+    height: 3vh;
+    width: 3vh;
+    margin: 0 0.25vw;
+    background-color: #ffa800;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
-h3{
-    color: #ffa800;
-    font-weight: 900;
-    font-size: 2.80vh;
-    padding: 1% 0 0.5% 0;
+.activeSlide, .dot:hover{
+    background-color: #ff7a00;
 }
 
-.videocontainer{
-    display: flex;
-}
-
-.computermockup{
-    width: 30vw;
-    background-color: #59432f;
-}
-
-.mobilmockup{
-    width: 15vw;
-    background-color: #59432f;
-}
-
-/*responsive billedestørrelser*/
-    #moodboardvfus{
-        width: 30vw;
-    }
-
-    #styletilevfus{
-        width: 20vw;
-    }
-
-    #nipponlogo{
-        width: 22%;
-    }
-
-    .nipponhvidimg{
-        width: 50vw;
-    }
-
-    #nipponjs{
-        width: 35vw;
-    }
-
-    #cociomockups img{
-        height: 40vh;
-    }
-
-    #tobilledermedp{
-        display: flex;
-    }
-
-.billedeogp {
-    width: 20vw;
-}
-
-.billedeogp img{
-    height: 30vh;
-}
-
-.billedeogp p{
-    font-size: 1.75vh;
-}
-
-.billedeogkilde{
-    display: flex;
-    flex-direction: row;
-}
-
-.billedeogkilde img{
-    width: 25vw;
-}
-
-.billedeogkilde p{
-    flex-wrap: wrap;
-    font-size: 1.75vh;
-    padding: 0 1%;
-}
-
-
-.portfoliofigmabilleder img{
-    width: 30vw;
-}
-
-#portfolioskitsebilleder img{
-    height: 30vh;
-}
-
-.instakolonner{
+.projektbaggrund{
+    width: 70%;
     height: 100%;
-    flex-wrap: wrap;
     display: flex;
-    margin-top: 1%;
-    width: 80vw;
+    justify-content: center;
+    align-items: center;
 }
 
-.instakolonner .enkolonne{
-    width: 18vw;
+#placeholder{
+    width: 80%;
+    height: 80%;
+    background-color: #4d941f;
 }
 
-.instakolonner .enkolonne img{
-    width: 16vw;
+.projektinfo{
+    background-color: #ffa800;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    padding: 10% 2%;
+    height: 100%;
+}
+
+.projektinfo h3, .projektinfo p{
+    color: #3E2713;
 }
 
 
@@ -351,39 +308,17 @@ h3{
 /*--------------------------styles til om nikoline--------------------*/
 
 #faldskærm{
-    margin-top: 2%;
+    height: 100vh;
 }
 
-.brødtekstogbilledekolonne{
-    display: flex;
-    width: 80vw;
-    justify-content: center;
-}
-
-.brødtekst{
-    text-align: left;
-    width: 55%;
-}
-
-.brødtekst ul{
-    margin: 1% 5%;
-}
-
-.brødtekst li{
+li{
     color: white;
+    font-size: 2.5dvh;
     margin: 0.25% 0;
     list-style-type: circle;
     list-style-position: inside;
 }
 
-.billedekolonne{
-    width: 25%;
-}
-
-.billedekolonne img{
-    width: 60%;
-    margin: 4% 0;
-}
 /*---------------------------styles til kontakt----------------------*/
 /*---------------------------styles til kontakt----------------------*/
 /*---------------------------styles til kontakt----------------------*/
@@ -392,244 +327,254 @@ h3{
     height: 25vh;
 }
 
-/*---------------------------Mediaquies--------------------*/
-/*---------------------------Mediaquies--------------------*/
-/*---------------------------Mediaquies--------------------*/
+            /*---------------------------Mediaquies--------------------*/
+            /*---------------------------Mediaquies--------------------*/
+            /*---------------------------Mediaquies--------------------*/
 
-@media screen and (max-width:1124px) {
-    header{
-        display: none;
-    }
+            @media screen and (max-width:1124px) {
+                header{
+                    display: none;
+                }
 
-    #burgermenu{
-        display: block;
-    }
+                #burgermenu{
+                    display: block;
+                    margin-top: 3dvw;
+                    margin-left: -75dvw;
+                }
 
-    #burgermenu.active{ /*class bliver tilføjet af js*/
-        margin-left: 26vw;
-    }
+                #burgermenu.active{ /*class bliver tilføjet af js*/
+                    margin-left: 40dvw;
+                    margin-top: 5dvw;
+                    height: auto;
+                    z-index: 5;
+                }
 
-    #burgermenu.active .streg:nth-child(2){
-        opacity: 0;
-    }
+                #burgermenu.active .streg:nth-child(2){
+                    opacity: 0;
+                }
 
-    /*burgermenu transistion
-    stregerne vender sig og bliver til kryds*/
-    #burgermenu.active .streg:nth-child(1){
-        transform: translateY(1.6vh) rotate(45deg);
-    }
+                /*burgermenu transistion
+                stregerne vender sig og bliver til kryds*/
+                #burgermenu.active .streg:nth-child(1){
+                    transform: translateY(1.6vh) rotate(45deg);
+                }
 
-    #burgermenu.active .streg:nth-child(3){
-        transform: translateY(-1.6vh) rotate(-45deg);
-    }
+                #burgermenu.active .streg:nth-child(3){
+                    transform: translateY(-1.6vh) rotate(-45deg);
+                }
 
-    header.active{ /*class bliver tilføjet af js*/
-        display: block;
-        width: 30vw;
-        height: 100dvh;
-    }
+                .streg{ /*streger i burgermenu*/
+                    width: 9vw;
+                }
 
-    main{
-        width: 100vw;
-        margin-left: 0;
-    }
-    
-    .trekolonner{
-        width: 100vw;
-    }
+                header.active{ /*class bliver tilføjet af js*/
+                    display: block;
+                    width: 80dvw;
+                    height: 100dvh;
+                    background-color: #383838;
+                    padding-top: 5%;
+                }
 
-    .computermockup{
-        width: 35vw;
-    }
-    
-    .mobilmockup{
-        width: 20vw;
-    }
+                nav a{
+                    font-size: 5dvh;
+                }
 
-    .billedekolonne img{
-        width: 60%;
-        margin: 4%;
-    }
-}
+                #menugrafik{
+                    width: auto;
+                    height: 40dvh;
+                    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+                }
 
-/*---------------------------Mediaquies--------------------*/
-/*---------------------------Mediaquies--------------------*/
-/*---------------------------Mediaquies--------------------*/
+                main{
+                    width: 100vw;
+                    margin-left: 0;
+                }
 
-@media screen and (max-width:500px) {
-    /*-------Burger menu------*/
-    header.active{
-        display: block;
-        width: 85vw;
-    }
+                .appelsinlogo{
+                    width: 65%;
+                }
+                
+                .trekolonner{
+                    width: 80dvw;
+                }
 
-    #burgermenu{ /*når menuen er lukket*/
-        margin-left: 3vw;
-        margin-top: 2vw;
-    }
+                .enkolonne{
+                    width: 80dvw;
+                    height: 63dvh;
+                }
 
-    #burgermenu.active{ /*når menuen er åben*/
-        margin-left: 65vw;
-    }
-/*----------maincontent------*/
-    h1{
-        font-size: 5vh;
-        margin: 5% 10% 0 10%;
-    }
+                .cirkelramme{ 
+                    height: 30dvh; 
+                    width: 30dvh;
+                    border-width: 2.5dvh;
+                }
 
-    .appelsinlogo{
-        width: 60%;
-    }
-    
-    .trekolonner{
-        width: 100vw;
-        height: 100%;
-        flex-wrap: wrap;
-    }
+                p{
+                    max-width: 68dvw;
+                }
 
-    .enkolonne{
-        width: 80vw;
-        padding-bottom: 5%;
-    }
+                .knap{
+                    font-size: 2.5dvh;
+                }
 
-    .enkolonne p{
-        margin: 3% 0;
-    }
+                #cocio{
+                    background-position: -8dvw 0; /*dåsen er i midten*/
+                }
 
-    .cirkelramme{ /*pixel skal ændres i media quies*/
-        height: 150px;
-        width: 150px;
-        border-width: 15px;
-    }
+                .carouselcard{
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    height: auto;
+                    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.5);
+                }
 
-    .centerP .enkolonne .knap{
-        padding: 5%;
-    }
+                .projektbaggrund{
+                    width: 100%;
+                    height: auto;
+                }
 
-    .knap{
-        margin: 3%;
-    }
+                .projektinfo{
+                    width: 100%;
+                    height: auto;
+                }
 
-    h2{
-        font-weight: 900;
-        font-size: 3.5vh;
+                .billedekolonne img{
+                    width: 60%;
+                    margin: 4%;
+                }
 
-    }
-    
-    p{
-        font-size: 2vh;
-        max-width: 85%;
-        margin: 2% 0 5% 0;
-    }
+                #faldskærm{
+                    height: 60dvh;
+                    width: auto;
+                }
+                
+                #telefonikon, #mailikon, #linkedinikon{
+                    height: auto;
+                    width: 50dvw;
+                }
 
-    .centerP .knap{
-        padding: 2.5%;
-    }
+                .lavkolonne a{
+                    font-size: 3.5dvh;
+                }
+            }
 
-    /*----Styles til projekt side*/
-    
-    #projektmenu{
-    margin-bottom: 8%;
-    }
+                    /*---------------------------Mediaquies--------------------*/
+                    /*---------------------------Mediaquies--------------------*/
+                    /*---------------------------Mediaquies--------------------*/
 
-    #projektlinks{
-        flex-wrap: nowrap;
-        display: flex;
-        flex-direction: column;
-        height: 45vh;
-        width: 85%;
-        justify-content: space-between;
-    }
+                    @media screen and (max-width:500px) {
+                        /*-------Burger menu------*/
+                        header.active{
+                            display: block;
+                            width: 85dvw;
+                            padding-top: 5dvh;
+                        }
 
-    .videocontainer{
-        flex-direction: column;
-    }
+                        #burgermenu{ /*når menuen er lukket*/
+                            margin-top: 3dvw;
+                            margin-left: -75dvw;
+                            z-index: 20;
+                        }
 
-    .computermockup{
-        width: 100%;
-    }
+                        #burgermenu.active{ /*når menuen er åben*/
+                            margin-left: 50dvw; /*flyttes fra midten fordi main har text align center*/
+                            margin-top: 5dvh;
+                            background-color: none;
+                        }
 
-    .projektlayout{
-        height: auto;
-    }
+                        #menugrafik{
+                            width: 65%;
+                            height: auto;
+                        }
+                    /*----------maincontent------*/
+                        h1{
+                            font-size: 5vh;
+                            margin: 5% 10% 0 10%;
+                        }
 
-    .projektlayout p{
-        margin: 2% 0 5% 0;
-    }
+                        .appelsinlogo{
+                            width: 70%;
+                        }
+                        
+                        .trekolonner{
+                            width: 100vw;
+                            height: 100%;
+                            flex-wrap: wrap;
+                        }
 
-    .projektlayout .knap{
-        padding: 4%;
-    }
-    
-    .mobilmockup{
-        width: 100%;
-    }
-    /*størrelser på billederne, fylder mere på mobil*/
-        #moodboardvfus{
-            width: 100%;
-        }
+                        .enkolonne{
+                            width: 80vw;
+                            padding-bottom: 5%;
+                        }
 
-        #styletilevfus{
-            width: 100%;
-        }
+                        .cirkelramme{ /*pixel skal ændres i media quies*/
+                            height: 150px;
+                            width: 150px;
+                            border-width: 15px;
+                        }
 
-        #nipponlogo{
-            width: 90%;
-        }
+                        .centerP .enkolonne .knap{
+                            padding: 5%;
+                        }
 
-        .nipponhvidimg{
-            width: 100%;
-        }
-        
-        #nipponjs{
-            width: 100%;
-        }
+                        .knap{
+                            margin: 3%;
+                        }
 
-        #cociomockups img{
-            height: 25vh;
-        }
+                        h2{
+                            font-weight: 900;
+                            font-size: 3.5vh;
 
-        .billedeogp {
-            width: 100%;
-        }
+                        }
+                        
+                        p{
+                            font-size: 2.5vh;
+                            max-width: 85%;
+                            margin: 2% 0 5% 0;
+                        }
 
-        .billedeogkilde img{
-            width: 80%;
-        }
+                        .centerP .knap{
+                            padding: 2.5%;
+                        }
 
-        .portfoliofigmabilleder img{
-            width: 100%;
-        }
+                        /*----Styles til projekt side*/
 
-        #portfolioskitsebilleder img{
-            height: 35vh;
-        }
+                        .carouselcontainer{
+                            width: 90%;
+                            height: auto;
+                            padding-top: 12%;
+                        }
 
-    /*-----genbrug med lidt nyt------*/
-    .instakolonner .enkolonne{
-        width: 80vw;
-    }
-    
-    .instakolonner .enkolonne img{
-        width: 60vw;
-    } 
-    /*-----styles til om siden------*/
-    .brødtekstogbilledekolonne{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
+                        .carouselcard{
+                            height: auto;
+                            width: 90%;
+                            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                        }
 
-    .brødtekst{
-        width: 100%;
-        margin: 0 0 0 10%;
-    }
+                        .prev, .next{
+                            top: -6dvh; /*pilene sidder i midten på y-aksen*/
+                            transform: translateY(0);
+                        }
 
-    .billedekolonne{
-        display: none;
-    }
-    /*-------styles til kontakt-------*/
-    #telefonikon, #mailikon, #linkedinikon{
-        height: 15vh;
-    }
-}
+                        .prev img, .next img{
+                            height: 8dvh;
+                        }
+
+                        .prev{
+                            left: 0;
+                        }
+
+                        .next{
+                            right: 0;
+                        }
+
+                        /*-------styles til kontakt-------*/
+                        #telefonikon, #mailikon, #linkedinikon{
+                            height: auto;
+                            width: 45dvw;
+                        }
+
+                        .lavkolonne a{
+                            font-size: 2.90dvh;
+                        }
+                    }
